@@ -42,6 +42,10 @@ const CategoryList = styled.div`
   display: flex;
   align-items: center;
   font-size: 14px;
+
+  @media (max-width: 500px) {
+    display: none;
+  }
 `;
 
 const CategoryOption = styled.button`

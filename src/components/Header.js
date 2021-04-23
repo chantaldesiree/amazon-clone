@@ -43,13 +43,12 @@ const Header = () => {
           <NavOptionLineOne>Returns</NavOptionLineOne>
           <NavOptionLineTwo>&amp; Orders</NavOptionLineTwo>
         </NavOption>
-        <NavOption>
-          <BasketContainer>
+
+      </Nav>
+      <BasketContainer>
             <ShoppingBasketIcon/>
             <BasketCount>0</BasketCount>
           </BasketContainer>
-        </NavOption>
-      </Nav>
     </Container>
   )
 }
@@ -79,12 +78,18 @@ const LocationContainer = styled.div`
   display: flex;
   flex-direction: row;
   float: left;
+  @media (max-width: 600px) {
+    display: none;
+  }
 `;
 
 const AddressContainer = styled.div`
   display: flex;
   flex-direction: column;
   padding-left: 5px;
+  @media (max-width: 600px) {
+    display: none;
+  }
 `;
 
 const Search = styled.div`
@@ -92,6 +97,10 @@ const Search = styled.div`
   align-items: center;
   height: 25px;
   flex: 1;
+
+  @media (max-width: 750px) {
+    display: none;
+}
 `;
 
 const SearchInputContainer = styled.div`
@@ -133,8 +142,12 @@ const Nav = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0 15px 0 15px;
+  padding: 0 0 0 15px;
   overflow: hidden;
+
+  @media (max-width: 500px) {
+      display: none;
+  }
 `;
 
 const NavOption = styled.button`
@@ -158,6 +171,10 @@ const FlagContainer = styled.div`
   img {
     width: 30px;
   }
+
+  @media (max-width: 650px) {
+    display: none;
+  }
 `;
 
 const NavOptionLineOne = styled.div`
@@ -174,6 +191,8 @@ const BasketContainer = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  color: white;
+  margin-right: 20px;
 `;
 
 const BasketCount = styled.div`
