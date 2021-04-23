@@ -138,7 +138,6 @@ const FeatureImageLarge = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width:100vw;
   box-sizing:border-box;
   margin-top: 12px;
 
@@ -146,7 +145,6 @@ const FeatureImageLarge = styled.div`
     object-fit: cover;
     overflow: hidden;
     min-height: 280px;
-
     &:hover {
       cursor: pointer;
     }
