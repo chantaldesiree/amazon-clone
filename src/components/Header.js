@@ -186,18 +186,26 @@ const NavOptionLineTwo = styled.div`
   font-weight: bold;
 `;
 
-const BasketContainer = styled.div`
+const BasketContainer = styled.button`
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   color: white;
   margin-right: 20px;
+  white-space: nowrap;
+  background-color: #131921;
+  border: 1px solid transparent;
+  text-align: left;
+  height: 50px;
+
+  &:hover {
+    border: 1px solid white;
+  }
 `;
 
 const BasketCount = styled.div`
   padding-left: 8px;
 `;
-
 
 export default Header;
