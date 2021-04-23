@@ -2,6 +2,8 @@
 
 A simple Amazon clone built using React, Material UI and Google Firebase.
 
+Currently a work in progress, the app will eventually use Google Cloud Firestore to populate data, as well as the Stripe API for payment processing.
+
 ### Demo the app [here](https://clone-c6f60.web.app)
 
 If you would like to download the app and run it locally, you can download the zip file, and from a terminal download the node modules by running either the command 'npm install' or 'yarn install', depending on the package manager you are using.
